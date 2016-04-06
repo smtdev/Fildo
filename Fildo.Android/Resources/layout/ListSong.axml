@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#22242A"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        local:tabIndicatorColor="@color/colorAccent" />
+    <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SongList"
+        local:MvxBind="ItemsSource Songs; ItemClick PlayCommand"
+        local:MvxItemTemplate="@layout/songsrowoptions" />
+    <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AlbumList"
+        local:MvxItemTemplate="@layout/albumrow"
+        local:MvxBind="ItemsSource Albums; ItemClick ItemSelectedCommand" />
+    <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SimilarList"
+        local:MvxItemTemplate="@layout/similarartist"
+        local:MvxBind="ItemsSource SimilarArtists; ItemClick SimilarArtistSelectedCommand" />
+</LinearLayout>

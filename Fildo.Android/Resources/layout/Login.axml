@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:hint="Username"
+        android:id="@+id/UsernameEditText"
+        android:layout_margin="10dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:password="true"
+        android:hint="Password"
+        android:text="asdfasdfasdf"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:layout_weight="0.1"
+        android:layout_margin="10dp" />
+    <TextView
+        android:text="This version only works with songs from NetEase not from VK. This means you cannot get any song from VK."
+        android:layout_margin="10dp"
+                android:textColor="#67738F"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView1"
+        android:textSize="16dp" />
+</LinearLayout>

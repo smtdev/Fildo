@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Cancel" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Action" />
+    <RootPropertyPathName Name="Visible" />
+    <RootPropertyPathName Name="Destructive" />
+    <RootPropertyPathName Name="Options" />
+    <RootPropertyPathName Name="ItemIcon" />
+    <RootPropertyPathName Name="LoginText" />
+    <RootPropertyPathName Name="Login" />
+    <RootPropertyPathName Name="CancelText" />
+    <RootPropertyPathName Name="PasswordPlaceholder" />
+    <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="PasswordText" />
+    <RootPropertyPathName Name="UserNamePlaceholder" />
+    <RootPropertyPathName Name="UserName" />
+    <RootPropertyPathName Name="UserNameText" />
+    <RootPropertyPathName Name="Message" />
+    <RootPropertyPathName Name="CancelVisibility" />
+    <RootPropertyPathName Name="PercentComplete" />
+    <RootPropertyPathName Name="TextPercentVisibility" />
+    <RootPropertyPathName Name="IsIndeterministic" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="PrimaryButtonText" />
+      <RootProperty Name="PrimaryButtonCommand" />
+      <RootProperty Name="IsPrimaryButtonEnabled" />
+      <RootProperty Name="SecondaryButtonText" />
+      <RootProperty Name="SecondaryButtonCommand" />
+      <RootProperty Name="IsSecondaryButtonEnabled" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="FallbackValue" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Acr.UserDialogs.ActionSheetContentDialog" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Password" />
+    </RootType>
+    <RootType FullName="Acr.UserDialogs.LoginContentDialog" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Value" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsIndeterminate" />
+    </RootType>
+    <RootType FullName="Acr.UserDialogs.ProgressContentDialog" />
+    <RootType FullName="Acr.UserDialogs.PromptContentDialog" />
+  </Roots.RootTypes>
+</Roots>

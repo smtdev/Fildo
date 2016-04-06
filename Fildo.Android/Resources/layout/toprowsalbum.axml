@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_width="160dp"
+    android:background="@drawable/backgroundAlpha1"
+    android:layout_height="220dp">
+    <Mvx.MvxImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:alpha="0.9"
+        android:src="@drawable/cat_placeholder_album"
+        android:layout_centerHorizontal="true"
+        local:MvxBind="ImageUrl ImageUrl"
+        android:id="@+id/AlbumPhoto" />
+    <LinearLayout
+        android:layout_below="@+id/AlbumPhoto"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingBottom="3dp">
+        <TextView
+            android:text="Album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#67738F"
+            local:MvxBind="Text Name"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:id="@+id/AlbumTextView"
+            android:textSize="@dimen/text_large" />
+        <TextView
+            android:text="Artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#67738F"
+            android:id="@+id/ArtistTextView"
+            local:MvxBind="Text Artist"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+<!--<TextView
+            android:text="Artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ArtistTextView"
+            local:MvxBind="Text Artist"
+            android:textSize="14dp" />-->
+</RelativeLayout>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CleanAndPlay" xml:space="preserve">
+    <value>Clean queue and play this</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadIt" xml:space="preserve">
+    <value>Download it</value>
+  </data>
+  <data name="EnqueueLast" xml:space="preserve">
+    <value>Enqueue last.</value>
+  </data>
+  <data name="ErrorGettingNeteasePL" xml:space="preserve">
+    <value>Error getting Netease playlist.</value>
+  </data>
+  <data name="ErrorGettingResults" xml:space="preserve">
+    <value>Error getting results. Try again.</value>
+  </data>
+  <data name="ErrorSearching" xml:space="preserve">
+    <value>Error searching</value>
+  </data>
+  <data name="ErrorWithSong" xml:space="preserve">
+    <value>Error with song: {0}</value>
+  </data>
+  <data name="ImportNetease" xml:space="preserve">
+    <value>Paste here url of your Netease Playlist and tap Import button. Then this playlist will be imported on your playlists in Fildo.
+
+http://music.163.com/playlist/XXXXXX/YYYYYYYY/
+
+Or just enter that XXXXXXX because that is the Id of the playlist.</value>
+  </data>
+  <data name="LoginBeforeImport" xml:space="preserve">
+    <value>You must login on this app with your Fildo user to use this section. You could create your fildo user in Fildo.net (Using a PC).</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Error with login, username or password incorrect.</value>
+  </data>
+  <data name="LoginOk" xml:space="preserve">
+    <value>You are logged, welcome {0}.</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>This version only works with songs from NetEase not from VK. This means you cannot get any song from VK.
+
+This require a Fildo user not a Netease one. (Fildo user not the email used to register).</value>
+  </data>
+  <data name="LyricError" xml:space="preserve">
+    <value>Error getting lyric for this song</value>
+  </data>
+  <data name="LyricNotFound" xml:space="preserve">
+    <value>Lyric not found</value>
+  </data>
+  <data name="MenuConfiguration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="MenuDownloadQueue" xml:space="preserve">
+    <value>Download Queue</value>
+  </data>
+  <data name="MenuImportPLNetease" xml:space="preserve">
+    <value>Import Netease Playlist</value>
+  </data>
+  <data name="MenuLast100PL" xml:space="preserve">
+    <value>Last 100 Playlists</value>
+  </data>
+  <data name="MenuLoginPL" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MenuLyrics" xml:space="preserve">
+    <value>Lyrics</value>
+  </data>
+  <data name="MenuMyPL" xml:space="preserve">
+    <value>My Playlists</value>
+  </data>
+  <data name="MenuPlayerQueue" xml:space="preserve">
+    <value>Player Queue</value>
+  </data>
+  <data name="MenuShare" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="NewVersion" xml:space="preserve">
+    <value>New version of fildo has been released please download and install it.
+Remember maybe you should uninstall this version first.</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>You need Internet connection to use Fildo. 
+
+Close and try again when you has internet connection.</value>
+  </data>
+  <data name="NoProxy" xml:space="preserve">
+    <value>Dont use proxy</value>
+  </data>
+  <data name="RegisterDupe" xml:space="preserve">
+    <value>This user or email already exists. Nothing was done.</value>
+  </data>
+  <data name="RegisterError" xml:space="preserve">
+    <value>Error. No users were created.</value>
+  </data>
+  <data name="RegisterOK" xml:space="preserve">
+    <value>Successfully created new user. Now check your complete password in your mail!</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveExternalSD" xml:space="preserve">
+    <value>Save downloads under external SD. If you dont see downloaded songs, You should restart your phone.
+ONLY WORKS ON ANDROID 5.0 OR HIGHER</value>
+  </data>
+  <data name="SaveUnderFolder" xml:space="preserve">
+    <value>Save downloads under folder named as artist/album/playlist.</value>
+  </data>
+  <data name="SearchNotFound" xml:space="preserve">
+    <value>No results</value>
+  </data>
+  <data name="SelectAction" xml:space="preserve">
+    <value>Select Action to do</value>
+  </data>
+  <data name="ShareText" xml:space="preserve">
+    <value>Search, listen or download music with #Fildo via @FildoWebsite</value>
+  </data>
+  <data name="SongsAndAlbums" xml:space="preserve">
+    <value>Songs &amp; Albums</value>
+  </data>
+  <data name="SpinnerCultureText" xml:space="preserve">
+    <value>Change your language (Maybe you have to close app and start again to apply changes):</value>
+  </data>
+  <data name="SpinnerProxyText" xml:space="preserve">
+    <value>Select a proxy (Only is for downloads, stream dont allow proxies)</value>
+  </data>
+  <data name="TextSavePL" xml:space="preserve">
+    <value>Name to save the Playlist</value>
+  </data>
+  <data name="TitleSavePL" xml:space="preserve">
+    <value>Save Playlist</value>
+  </data>
+  <data name="TopAlbumError" xml:space="preserve">
+    <value>Error getting Top Albums info. Try again.</value>
+  </data>
+  <data name="TopAlbums" xml:space="preserve">
+    <value>Top Albums</value>
+  </data>
+  <data name="TopArtistError" xml:space="preserve">
+    <value>Error getting Top Artist info. Try again.</value>
+  </data>
+  <data name="TopArtists" xml:space="preserve">
+    <value>Top Artists</value>
+  </data>
+  <data name="TopPlaylistError" xml:space="preserve">
+    <value>Error getting Top Playlist info. Try again.</value>
+  </data>
+  <data name="TopPlaylists" xml:space="preserve">
+    <value>Top Netease Playlists</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>Do you want delete it?</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Terms &amp; conditions
+
+Fildo does not index nor host any mp3 files, it’s just a web interface to third party mp3 search engines.
+
+Fildo has no control over any web sites or resources which are provided by companies or persons other than Fildo.
+
+You acknowledge and agree that Fildo is not responsible for the availability or content of any such external sites or resources, and does not endorse any advertising, products or other materials on or available from such web sites or resources.
+
+You acknowledge and agree that Fildo is not liable for any loss or damage which may be incurred by you as a result of the availability of those external sites or resources, or as a result of any reliance placed by you on the completeness, accuracy or existence of any advertising, products or other materials on, or available from, such web sites or resources.
+
+You may not disassemble or reverse engineer or incorporate into another work the software or its components.
+
+Fildo.net aggregates content from around the web; it does not host music or video content.
+
+If you have a copyright infringement complaint you can contact whichever of the following companies the suspected infringement: 163.com or Vk.com
+
+
+</value>
+  </data>
+  <data name="DownloadAllConfirm" xml:space="preserve">
+    <value>Are you sure that want download {0} songs?</value>
+  </data>
+  <data name="SkipExistDownload" xml:space="preserve">
+    <value>Skip Download: {0} - {1}{2}. Because that file exits.</value>
+  </data>
+  <data name="ErrorDownloading" xml:space="preserve">
+    <value>Error Downloading: {0} - {1}. Please report this on fildo.net contact form.</value>
+  </data>
+</root>

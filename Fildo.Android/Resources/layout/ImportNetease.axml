@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/nohash"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="You must login on this app with your Fildo user to use this section. You could create your fildo user in Fildo.net (Using a PC)."
+            android:layout_margin="10dp"
+                android:textColor="#67738F"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hashash"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="http://music.163.com/playlist/XXXXXX/YYYYYYYY/"
+                local:MvxBind="Text UrlPlaylist"
+                android:id="@+id/UsernameEditText"
+                android:layout_margin="10dp" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:text="Paste here url of your Netease Playlist and tap Import button. Then this playlist will be imported on your playlists in Fildo.\n\nhttp://music.163.com/playlist/XXXXXX/YYYYYYYY/\n\nOr just enter that XXXXXXX because that is the Id of the playlist."
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+                android:textColor="#67738F"
+            android:layout_height="match_parent"
+            android:id="@+id/importNetease"
+            android:textSize="16dp" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:maxWidth="400dp"
+                android:minWidth="400dp"
+                android:id="@+id/BtnLogin"
+                local:MvxBind="Click ImportCommand"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="center_horizontal"
+                android:text="Import" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    local:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:lineSpacingMultiplier="1"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:id="@+id/lyricContainer" />
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:background="#000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true">
+    <Mvx.MvxImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        local:MvxBind="ImageUrl CaptchaUrl"
+        android:id="@+id/CaptchaImage" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="Enter Text"
+        android:id="@+id/CaptchaText"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/BntCaptcha"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="center_horizontal"
+        android:text="OK" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="This captcha is provided by VK, we need that you solve it to avoid problems using VK API. Thank you."
+        android:layout_margin="10dp" />
+</LinearLayout>

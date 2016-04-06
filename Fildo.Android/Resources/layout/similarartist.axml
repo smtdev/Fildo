@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_width="160dp"
+    android:background="@drawable/backgroundAlpha1"
+    android:layout_height="180dp">
+    <Mvx.MvxImageView
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:alpha="0.9"
+        android:src="@drawable/cat_placeholder_artist"
+        android:layout_centerHorizontal="true"
+        local:MvxBind="ImageUrl PicUrl"
+        android:id="@+id/AlbumPhoto" />
+    <TextView
+        android:text="Artist"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/AlbumPhoto"
+        android:layout_height="fill_parent"
+        android:id="@+id/ArtistTextView"
+        android:gravity="center_vertical"
+        local:MvxBind="Text Name"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp" />
+</RelativeLayout>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DownloadIt" xml:space="preserve">
+    <value>Scarica</value>
+  </data>
+  <data name="ErrorGettingNeteasePL" xml:space="preserve">
+    <value>Errore della playlist Netease.</value>
+  </data>
+  <data name="ErrorGettingResults" xml:space="preserve">
+    <value>Errore nei risultati. Riprova. </value>
+  </data>
+  <data name="ErrorSearching" xml:space="preserve">
+    <value>Errore nella ricerca. </value>
+  </data>
+  <data name="ErrorWithSong" xml:space="preserve">
+    <value>Errore con la canzone: {0}</value>
+  </data>
+  <data name="ImportNetease" xml:space="preserve">
+    <value>Incolla qui la url della tua playlist Netease e clicca Importa. Cosi questa playlist sara importata nelle tue playlist in Fildo.
+http://music.163.com/playlist/XXXXXX/YYYYYYYY/
+Altrimenti inserisci XXXXXXX poiché questo é l'Id della playlist.</value>
+  </data>
+  <data name="LoginBeforeImport" xml:space="preserve">
+    <value>Devi fare il login in questa app con il tuo user Fildo per potere usare questa sezione. Puoi creare tuo user fildo in Fildo.net (Usando un computer).</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Errore di login, user o password incorrectta.</value>
+  </data>
+  <data name="LoginOk" xml:space="preserve">
+    <value>Login successo, Benvenuto {0}.</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>Questa versione solo funziona con canzoni di Netease non di VK. Quindi non potrai avere delle canzone di VK.
+É neccesario un user Fildo, non Netease. (Non confundere il user con l'email usato per registrarti).</value>
+  </data>
+  <data name="LyricError" xml:space="preserve">
+    <value>Errore trovando testo per questa canzone</value>
+  </data>
+  <data name="LyricNotFound" xml:space="preserve">
+    <value>Testo non trovato</value>
+  </data>
+  <data name="MenuConfiguration" xml:space="preserve">
+    <value>Configurazioni</value>
+  </data>
+  <data name="MenuDownloadQueue" xml:space="preserve">
+    <value>Coda di Download</value>
+  </data>
+  <data name="MenuImportPLNetease" xml:space="preserve">
+    <value>Importa playlist Netease</value>
+  </data>
+  <data name="MenuLast100PL" xml:space="preserve">
+    <value>Ultime 100 playlists</value>
+  </data>
+  <data name="MenuLoginPL" xml:space="preserve">
+    <value>Login / Playlist</value>
+  </data>
+  <data name="MenuLyrics" xml:space="preserve">
+    <value>Testo</value>
+  </data>
+  <data name="MenuPlayerQueue" xml:space="preserve">
+    <value>Coda di riproduzione</value>
+  </data>
+  <data name="NewVersion" xml:space="preserve">
+    <value>Nuova versione di Fildo disponibile si prega di scaricarla e instalarla.
+Ricorda che devi disinstallare questa versione prima.</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Hai bisogno di accesso a Internet per usare Fildo.
+Chiudi e riprova quando avrai connessione a Internet.</value>
+  </data>
+  <data name="RegisterDupe" xml:space="preserve">
+    <value>Il user o email é già estato occupato. Niente da fare.</value>
+  </data>
+  <data name="RegisterError" xml:space="preserve">
+    <value>Errore. Nessun user creato. </value>
+  </data>
+  <data name="RegisterOK" xml:space="preserve">
+    <value>Successo al creare il nuovo user. Adesso controlla la password completa nella tua email. </value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="SaveUnderFolder" xml:space="preserve">
+    <value>Salva scariche in cartelle
+nominate come artista/album/playlist.</value>
+  </data>
+  <data name="SearchNotFound" xml:space="preserve">
+    <value>Senza risultati</value>
+  </data>
+  <data name="SongsAndAlbums" xml:space="preserve">
+    <value>Canzoni &amp; Album</value>
+  </data>
+  <data name="SpinnerCultureText" xml:space="preserve">
+    <value>Cambiare lingua (forse dovrai riavviare l'app per aplicare i cambi):</value>
+  </data>
+  <data name="TopAlbumError" xml:space="preserve">
+    <value>Errore trovando Top Album info. Riprova.</value>
+  </data>
+  <data name="TopAlbums" xml:space="preserve">
+    <value>Top Album</value>
+  </data>
+  <data name="TopArtistError" xml:space="preserve">
+    <value>Errore trovando Top Artist info. Riprova.</value>
+  </data>
+  <data name="TopArtists" xml:space="preserve">
+    <value>Top Artisti</value>
+  </data>
+  <data name="TopPlaylistError" xml:space="preserve">
+    <value>Errore trovando Top Playlist info. Riprova.</value>
+  </data>
+  <data name="TopPlaylists" xml:space="preserve">
+    <value>Top Netease Playlist</value>
+  </data>
+</root>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="Search">Search</string>
+  <string name="Login">Login</string>
+  <string name="Cancel">Cancel</string>
+	<string name="app_name">Fildo</string>
+  <string name="new_game">New</string>
+  <string name="LoginMenu">Get Playlists</string>
+  <string name="ButtonUpdate">Update Fildo</string>
+  <string name="TabSongs">Songs</string>
+  <string name="TabAlbums">Albums</string>
+  <string name="DownloadAll">Download All</string>
+  <string name="PlayAll">Play All</string>
+</resources>

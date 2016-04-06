@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#67738F"
+        android:textSize="24dp"
+        android:layout_marginLeft="5dp"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        local:MvxBind="Text Song.Artist"
+        android:id="@+id/SongTextViewSongList" />
+    <TextView
+        android:text="Artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#67738F"
+        android:textSize="16dp"
+        android:layout_marginLeft="5dp"
+        local:MvxBind="Text Song.Title"
+        android:id="@+id/ArtistTextViewSongList" />
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:max="100"
+        local:MvxBind="Progress Percent; Visibility Percent, Converter=Visibility"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+<!--  -->
+</LinearLayout>

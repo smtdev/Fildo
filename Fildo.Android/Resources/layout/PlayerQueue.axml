@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    local:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        local:tabIndicatorColor="@color/colorAccent" />
+    <LinearLayout
+        android:id="@+id/playerContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:id="@+id/playingSong" />
+    <!--<ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            local:MvxBind="Progress PlayingArtistPercent"
+            android:layout_marginBottom="5dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressorange" />-->
+        <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            local:MvxBind="Progress PlayingArtistPercent"
+            android:max="100" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout5"
+            android:layout_weight="0.1"
+            android:layout_marginBottom="5dp"
+            android:layout_height="fill_parent">
+            <ToggleButton
+                android:background="@drawable/toggle_shuffle"
+                android:id="@+id/btnShuffle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textOff=" "
+                android:textOn=" "
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/element_margin_tiny" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/btnPrevious"
+                android:background="@null"
+                android:src="@drawable/button_previous"
+                android:layout_marginRight="@dimen/margin_large"
+                android:scaleType="center"
+                android:layout_toRightOf="@+id/btnShuffle"
+                android:layout_weight="2" />
+            <ToggleButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/btnPlayPause"
+                android:background="@drawable/togglebutton_playpause"
+                android:layout_centerVertical="true"
+                android:textOff=" "
+                android:textOn=" "
+                android:layout_toRightOf="@+id/btnPrevious"
+                android:layout_toLeftOf="@+id/btnNext"
+                android:layout_weight="2" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/btnNext"
+                android:background="@null"
+                android:src="@drawable/button_next"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btnRepeat"
+                android:layout_weight="2" />
+            <ToggleButton
+                android:background="@drawable/toggle_repeat"
+                android:id="@+id/btnRepeat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:textOff=" "
+                android:textOn=" "
+                android:layout_weight="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+        android:id="@+id/listQueue"
+        android:layout_above="@id/playerContainer"
+        android:layout_below="@id/tabs"
+        android:layout_width="match_parent"
+        local:MvxBind="ItemsSource Songs; ItemClick ItemSelectedCommand"
+        local:MvxItemTemplate="@layout/playersongsrow"
+        android:layout_height="match_parent" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/lyricScroll"
+        android:layout_above="@id/playerContainer"
+        android:layout_below="@id/tabs"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:lineSpacingMultiplier="1"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:id="@+id/lyricContainer" />
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

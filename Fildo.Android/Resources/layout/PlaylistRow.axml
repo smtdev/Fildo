@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/playlistload"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.1"
+        local:MvxBind="Click LoadPlaylistCommand"
+        android:id="@+id/playIcon" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#67738F"
+        android:id="@+id/PlaylistRowName"
+        android:layout_margin="15dp"
+        android:layout_weight="0.9"
+        local:MvxBind="Text Item.Name"
+        android:textSize="20dp" />
+    <ImageView
+        android:src="@drawable/delete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.1"
+        local:MvxBind="Click DeletePlaylistCommand; Visibility ArePublic, Converter=Visibility"
+        android:id="@+id/playIcon" />
+</LinearLayout>

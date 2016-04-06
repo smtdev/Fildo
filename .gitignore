@@ -1,0 +1,12 @@
+Fildo.Android/bin/
+Fildo.Android/obj/
+Fildo.Core/bin/
+Fildo.Core/obj/
+Fildo.Core.Common/bin/
+Fildo.Core.Common/obj/
+Fildo.Core.DTOs/bin/
+Fildo.Core.DTOs/obj/
+Fildo.Core.Entities/bin/
+Fildo.Core.Entities/obj/
+Fildo.Core.Services/bin/
+Fildo.Core.Services/obj/

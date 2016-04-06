@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<item
+        android:id="@+id/New"
+        android:icon="@drawable/Icon"
+        android:title="@string/new_game"
+        android:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/Login"
+        android:icon="@drawable/login"
+        android:showAsAction="ifRoom"
+        android:title="@string/LoginMenu" />
+</menu>

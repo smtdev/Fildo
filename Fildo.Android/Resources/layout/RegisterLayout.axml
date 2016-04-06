@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Username"
+            local:MvxBind="Text Username"
+            android:id="@+id/UsernameEditText"
+            android:layout_margin="10dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Password"
+            android:password="true"
+            local:MvxBind="Text Password"
+            android:id="@+id/PasswordEditText"
+            android:layout_margin="10dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Real Email"
+            local:MvxBind="Text Email"
+            android:layout_margin="10dp" />
+    </android.support.design.widget.TextInputLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:maxWidth="400dp"
+            android:minWidth="400dp"
+            android:id="@+id/BtnLogin"
+            local:MvxBind="Click RegisterCommand"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="center_horizontal"
+            android:text="Register" />
+    </FrameLayout>
+</LinearLayout>

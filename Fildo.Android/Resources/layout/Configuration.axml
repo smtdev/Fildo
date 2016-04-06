@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/checkboxsavealbum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        local:MvxBind="Checked CreateFolderArtistAlbum"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    <CheckBox
+        android:id="@+id/checkboxexternal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:id="@+id/spinnerCultureText"
+        android:textColor="#67738F"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+    <Mvx.MvxSpinner
+        android:id="@+id/spinnerCulture"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        local:MvxBind="ItemsSource Cultures" />
+    <TextView
+        android:id="@+id/spinnerProxyText"
+        android:layout_width="fill_parent"
+        android:textColor="#67738F"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+    <Mvx.MvxSpinner
+        android:id="@+id/spinnerProxy"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        local:MvxBind="ItemsSource Proxies" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:maxWidth="400dp"
+            android:minWidth="400dp"
+            android:id="@+id/BtnSave"
+            local:MvxBind="Click SaveCommand"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="center_horizontal"
+            android:text="Save" />
+    </FrameLayout>
+<!--<TextView
+          android:text="This version only works with songs from NetEase not from VK. This means you cannot get any song from VK."
+          android:layout_margin="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:id="@+id/textView1"
+          android:textSize="16dp" />-->
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#22242A"
+    android:layout_above="@id/BannerContainer"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/amb1"
+            android:layout_alignTop="@+id/actual_content"
+            android:layout_alignBottom="@id/actual_content"
+            android:layout_alignLeft="@id/actual_content"
+            android:layout_alignRight="@id/actual_content" />
+        <LinearLayout
+            android:id="@id/actual_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/recommendationstextview"
+                android:text="Recommendations"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_very_huge"
+                android:textColor="#fd7e5c"
+                android:layout_marginTop="5dp"
+                local:MvxBind="Visibility Recommendations, Converter=Visibility"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp" />
+            <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+                android:id="@+id/recommendationsview"
+                android:layout_width="match_parent"
+                local:layout_behavior="@string/appbar_scrolling_view_behavior"
+                local:MvxBind="ItemsSource Recommendations; ItemClick ArtistSelectedCommand;Visibility Recommendations, Converter=Visibility"
+                local:MvxItemTemplate="@layout/topartistsrow"
+                android:layout_height="180dp" />
+            <TextView
+                android:id="@+id/topalbumstextview"
+                android:text="Top Albums"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_very_huge"
+                android:textColor="#fd7e5c"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp" />
+            <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+                android:id="@+id/topalbumsview"
+                android:layout_width="match_parent"
+                local:layout_behavior="@string/appbar_scrolling_view_behavior"
+                local:MvxBind="ItemsSource TopAlbums; ItemClick ItemSelectedCommand"
+                local:MvxItemTemplate="@layout/toprowsalbum"
+                android:layout_height="240dp" />
+            <TextView
+                android:id="@+id/topartiststextview"
+                android:text="Top Artists"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_very_huge"
+                android:textColor="#fd7e5c"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp" />
+            <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+                android:id="@+id/topartistsview"
+                android:layout_width="match_parent"
+                local:layout_behavior="@string/appbar_scrolling_view_behavior"
+                local:MvxBind="ItemsSource TopArtists; ItemClick ArtistSelectedCommand"
+                local:MvxItemTemplate="@layout/topartistsrow"
+                android:layout_height="180dp" />
+            <TextView
+                android:id="@+id/topneteaseplayliststextview"
+                android:text="Top Netease Playlists"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_very_huge"
+                android:textColor="#fd7e5c"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp" />
+            <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+                android:id="@+id/topplaylistsview"
+                android:layout_width="match_parent"
+                local:layout_behavior="@string/appbar_scrolling_view_behavior"
+                local:MvxBind="ItemsSource TopPlaylists; ItemClick PlaylistSelectedCommand"
+                local:MvxItemTemplate="@layout/toprowplaylist"
+                android:layout_height="210dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

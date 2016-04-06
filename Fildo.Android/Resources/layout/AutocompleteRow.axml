@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Mvx.MvxImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        local:MvxBind="ImageUrl PicUrl"
+        android:id="@+id/ImageAutocomplete" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        <TextView
+            android:text="Artist"
+            android:layout_width="match_parent"
+                android:textColor="#67738F"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            local:MvxBind="Text Name"
+            android:id="@+id/NameTextView" />
+        <TextView
+            android:text="Album"
+            android:layout_width="match_parent"
+                android:textColor="#67738F"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            local:MvxBind="Text ResultType"
+            android:id="@+id/TypeTextView" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="160dp"
+    android:layout_height="220dp">
+    <Mvx.MvxImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        local:MvxBind="ImageUrl ImageUrl"
+        android:id="@+id/AlbumPhoto" />
+    <TextView
+        android:text="Album"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text Name"
+                android:textColor="#67738F"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_below="@+id/AlbumPhoto"
+        android:id="@+id/AlbumTextView"
+        android:textSize="20sp" />
+<!--<TextView
+            android:text="Artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ArtistTextView"
+            local:MvxBind="Text Artist"
+            android:textSize="14dp" />-->
+</RelativeLayout>
